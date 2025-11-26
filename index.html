@@ -5,10 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter Clone</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-black text-white font-roboto box-border">
+
+    <main class="pl-32 pr-32 grid grid-cols-3 ">
+        <div class="leftPanel border-r-2 border-gray-400 p-4">
+            <div class="logo text-3xl">
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="sideBar mt-8 flex flex-col gap-7 text-lg font-semibold ">
+                <div class="home cursor-pointer">
+                    <i class="fa-solid fa-house "></i>
+                    <span>Home</span>
+                </div>
+                <div class="explore cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Explore</span>
+                </div>
+                <div class="notification cursor-pointer">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Notification</span>
+                </div>
+                <div class="grok cursor-pointer">
+                    <i class="fa-solid fa-message"></i>
+                    <span>Grok</span>
+                </div>
+                <div class="lists cursor-pointer">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Lists</span>
+                </div>
+                <div class="bookmarks cursor-pointer">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span>Bookmarks</span>
+                </div>
+                <div class="communities cursor-pointer">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Communities</span>
+                </div>
+                <div class="premium cursor-pointer">
+                    <i class="fa-solid fa-medal"></i>
+                    <span>Premium</span>
+                </div>
+                <div class="profile cursor-pointer">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </div>
+                <div class="more cursor-pointer">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <span>More</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mainPanel border-r-2 border-gray-400">
+            <div class="header flex justify-around space-x-5 border-b-1 border-gray-400  my-2 text-lg font-semibold ">
+                <div
+                    class="forYou cursor-pointer border-b-4 border-black hover:border-b-4 hover:border-teal-400 transition duration-300 ease-out  py-2 ">
+                    <span>For You</span>
+                </div>
+                <div class="followSettings w-1/2 flex space-x-15 justify-between  ">
+                    <div
+                        class="follow border-b-4 border-black cursor-pointer py-2 hover:border-b-4 hover:border-teal-400 transition duration-300 ease-out ">
+                        <span>Following</span>
+                    </div>
+                    <div
+                        class="settings border-b-4 border-black cursor-pointer py-2 hover:border-b-4 hover:border-teal-400 transition duration-300 ease-out ">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightPanel w-3/4">
+            <div class="search  m-4 ">
+                <input type="search" name="search" id="search" placeholder="Search..."
+                    class="px-3 py-1 outline-none bg-zinc-900 rounded-xl w-11/12 ">
+            </div>
+            <div class="trends bg-zinc-900 m-4 rounded-lg">
+                <div class="trendCard p-4">
+                    <div class="trendLocation text-gray-300">
+                        Trending in India
+                    </div>
+                    <div class="hashtag font-semibold">
+                        #Orry
+                    </div>
+                    <div class="postNo text-gray-300">
+                        40.8k Posts
+                    </div>
+                </div>
+
+                <div class="trendCard p-4">
+                    <div class="trendLocation text-gray-300">
+                        Trending in India
+                    </div>
+                    <div class="hashtag font-semibold">
+                        #beeeepinnn
+                    </div>
+                    <div class="postNo text-gray-300">
+                        100.1k Posts
+                    </div>
+                </div>
+
+                <div class="trendCard p-4">
+                    <div class="trendLocation text-gray-300">
+                        Trending in India
+                    </div>
+                    <div class="hashtag font-semibold">
+                        #codewithHarry
+                    </div>
+                    <div class="postNo text-gray-300">
+                        1.1m Posts
+                    </div>
+                </div>
+
+                <div class="trendCard p-4">
+                    <div class="trendLocation text-gray-300">
+                        Trending in India
+                    </div>
+                    <div class="hashtag font-semibold">
+                        #latent
+                    </div>
+                    <div class="postNo text-gray-300">
+                        300k Posts
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
 
