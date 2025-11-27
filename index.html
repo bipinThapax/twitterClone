@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter Clone</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,8 +18,8 @@
 
 <body class="bg-black text-white font-roboto box-border">
 
-    <main class="pl-32 pr-32 grid grid-cols-3 ">
-        <div class="leftPanel border-r-2 border-gray-400 p-4">
+    <main class="main pl-32 pr-32 flex justify-evenly relative">
+        <div class="leftPanel  p-4 ">
             <div class="logo text-3xl">
                 <i class="fa-brands fa-x-twitter"></i>
             </div>
@@ -68,26 +68,189 @@
             </div>
         </div>
 
-        <div class="mainPanel border-r-2 border-gray-400">
-            <div class="header flex justify-around space-x-5 border-b-1 border-gray-400  my-2 text-lg font-semibold ">
+        <div class="mainPanel border-l-2 border-r-2 w-2/5 border-zinc-800 m-4 relative">
+            <div
+                class="header flex justify-around space-x-5 border-b-2 border-zinc-900  py-2 text-lg font-semibold sticky top-0  bg-black bg-opacity-95">
                 <div
-                    class="forYou cursor-pointer border-b-4 border-black hover:border-b-4 hover:border-teal-400 transition duration-300 ease-out  py-2 ">
+                    class="forYou cursor-pointer border-b-4 text-zinc-400 hover:text-white border-black hover:border-b-4 hover:border-teal-400 transition duration-300 ease-out py-1">
                     <span>For You</span>
                 </div>
-                <div class="followSettings w-1/2 flex space-x-15 justify-between  ">
+                <div class="followSettings w-1/2 flex space-x-15 justify-around text-zinc-400  ">
                     <div
-                        class="follow border-b-4 border-black cursor-pointer py-2 hover:border-b-4 hover:border-teal-400 transition duration-300 ease-out ">
+                        class="follow cursor-pointer border-b-4 border-black hover:border-b-4 hover:text-white hover:border-teal-400 transition duration-300 ease-out py-1">
                         <span>Following</span>
                     </div>
                     <div
-                        class="settings border-b-4 border-black cursor-pointer py-2 hover:border-b-4 hover:border-teal-400 transition duration-300 ease-out ">
+                        class="settings cursor-pointer border-b-4 border-black hover:border-b-4 hover:text-white hover:border-teal-400 transition duration-300 ease-out py-1">
                         <i class="fa-solid fa-gear"></i>
                     </div>
                 </div>
             </div>
+            <div class="post border-b-2 border-zinc-900 pb-4 ">
+                <div class="content p-4 flex justify-start items-center space-x-2">
+                    <div class="profile rounded-full">
+                        <img src="./images/profile.jpg" alt="logo" class="rounded-full w-10 cursor-pointer">
+                    </div>
+                    <div class="input text-lg ">
+                        <input class="p-2 pr-20 outline-none rounded-lg  bg-black" type="text" name="text" id="text"
+                            placeholder="What's happening???">
+                    </div>
+                </div>
+                <div class="customizables flex justify-between mx-5">
+                    <div class="customBtns text-sky-600">
+                        <button><i class="fa-solid fa-image"></i></button>
+                        <button><i class="fa-solid fa-gift"></i></button>
+                        <button><i class="fa-solid fa-fan"></i></button>
+                        <button><i class="fa-solid fa-face-smile"></i></button>
+                        <button class="opacity-90"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                    <div class="postBtn bg-blue-800 py-1 px-4 rounded-2xl text-gray-300 font-semibold">
+                        <button>Post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="postRecommends text-center p-2.5 text-sky-600 border-b-2 border-zinc-900">
+                <span>Show 199 Posts</span>
+            </div>
+
+            <div class="postContainer">
+                <div class="postCard p-3 flex  gap-3">
+                    <div class="profile pt-1 w-20">
+                        <img src="./images/profile.jpg" alt="profile" class="w-10 h-10 object-cover rounded-full">
+                    </div>
+                    <div class="details  pr-2 ">
+                        <div class="user flex gap-2">
+                            <div class="name font-extrabold">
+                                <span>Mark Zuckerberg</span>
+                            </div>
+                            <div class="userName font-light text-gray-600">
+                                <span>@markFromMars ●</span>
+                            </div>
+                            <div class="upTime font-light text-gray-600">
+                                <span>8h</span>
+                            </div>
+                        </div>
+                        <div class="texts py-1 font-light">
+                            What is this stupid app. Elon, you really need to learn and shall I teach you? HOw about a
+                            night in UFC main event ;)
+                        </div>
+                        <div class="postBtn text-gray-700 flex justify-between  mt-3">
+                            <div class="comment">
+                                <button><i class="fa-regular fa-comment"></i></button>
+                                <span>1k</span>
+                            </div>
+                            <div class="repost">
+                                <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                                <span>1k</span>
+                            </div>
+                            <div class="like">
+                                <button><i class="fa-regular fa-heart"></i></button>
+                                <span>1k</span>
+                            </div>
+                            <div class="share">
+                                <button><i class="fa-solid fa-chart-simple"></i></button>
+                                <span>1k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- second postcard -->
+                <div class="postCard p-3 flex gap-3">
+                    <div class="profile pt-1 w-20">
+                        <img src="./images/profile.jpg" alt="profile" class="w-10 h-10 object-cover rounded-full">
+                    </div>
+                    <div class="details  pr-7 ">
+                        <div class="user flex gap-2">
+                            <div class="name font-extrabold">
+                                <span>CodeWithChai</span>
+                            </div>
+                            <div class="userName font-light text-gray-600">
+                                <span>@codingChai ●</span>
+                            </div>
+                            <div class="upTime font-light text-gray-600">
+                                <span>8h</span>
+                            </div>
+                        </div>
+                        <div class="texts py-1 font-light">
+                            Most popular framework for 2025🫨
+                        </div>
+                        <div class="uploadImg">
+                            <img src="./images/react.png" alt="" class="rounded-lg">
+                        </div>
+                        <div class="postBtn text-gray-700 flex justify-between  mt-3">
+                            <div class="comment">
+                                <button><i class="fa-regular fa-comment"></i></button>
+                                <span>5.1k</span>
+                            </div>
+                            <div class="repost">
+                                <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                                <span>10k</span>
+                            </div>
+                            <div class="like">
+                                <button><i class="fa-regular fa-heart"></i></button>
+                                <span>18k</span>
+                            </div>
+                            <div class="share">
+                                <button><i class="fa-solid fa-chart-simple"></i></button>
+                                <span>1.9k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="postCard p-3 flex gap-3">
+                    <div class="profile pt-1 w-20">
+                        <img src="./images/profile.jpg" alt="profile" class="w-10 h-10 object-cover rounded-full">
+                    </div>
+                    <div class="details  pr-7  ">
+                        <div class="user flex gap-2">
+                            <div class="name font-extrabold">
+                                <span>Memenagar</span>
+                            </div>
+                            <div class="userName font-light text-gray-600">
+                                <span>@memewithme ●</span>
+                            </div>
+                            <div class="upTime font-light text-gray-600">
+                                <span>1h</span>
+                            </div>
+                        </div>
+                        <div class="texts py-1 font-light">
+                            Designer and Developer 🤣
+                        </div>
+                        <div class="uploadImg  ">
+                            <img src="./images/designMeme.png" alt="" class="object-cover rounded-lg">
+                        </div>
+                        <div class="postBtn text-gray-700 flex justify-between  mt-3">
+                            <div class="comment">
+                                <button><i class="fa-regular fa-comment"></i></button>
+                                <span>5.1k</span>
+                            </div>
+                            <div class="repost">
+                                <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                                <span>10k</span>
+                            </div>
+                            <div class="like">
+                                <button><i class="fa-regular fa-heart"></i></button>
+                                <span>18k</span>
+                            </div>
+                            <div class="share">
+                                <button><i class="fa-solid fa-chart-simple"></i></button>
+                                <span>1.9k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
         </div>
 
-        <div class="rightPanel w-3/4">
+        <div class="rightPanel w-1/3 ">
             <div class="search  m-4 ">
                 <input type="search" name="search" id="search" placeholder="Search..."
                     class="px-3 py-1 outline-none bg-zinc-900 rounded-xl w-11/12 ">
@@ -122,12 +285,25 @@
                         Trending in India
                     </div>
                     <div class="hashtag font-semibold">
-                        #codewithHarry
+                        #wwe
                     </div>
                     <div class="postNo text-gray-300">
                         1.1m Posts
                     </div>
                 </div>
+
+                <div class="trendCard p-4">
+                    <div class="trendLocation text-gray-300">
+                        Trending in India
+                    </div>
+                    <div class="hashtag font-semibold">
+                        #codeWithHarry
+                    </div>
+                    <div class="postNo text-gray-300">
+                        1.1m Posts
+                    </div>
+                </div>
+
 
                 <div class="trendCard p-4">
                     <div class="trendLocation text-gray-300">
@@ -140,6 +316,7 @@
                         300k Posts
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
