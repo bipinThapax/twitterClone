@@ -19,69 +19,79 @@
 <body class="bg-black text-white font-roboto box-border">
 
     <main class="main pl-32 pr-32 flex justify-evenly relative">
-        <div class="leftPanel  p-4 ">
+        <div class="sticky top-0 leftPanel py-4 px-4 h-full ">
             <div class="logo text-3xl">
                 <i class="fa-brands fa-x-twitter"></i>
             </div>
-            <div class="sideBar mt-8 flex flex-col gap-7 text-lg font-semibold ">
-                <div class="home cursor-pointer">
-                    <i class="fa-solid fa-house "></i>
+            <div class="sideBar mt-8 flex flex-col gap-2 text-xl font-semibold ">
+                <div
+                    class="home cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-house mr-3 "></i>
                     <span>Home</span>
                 </div>
-                <div class="explore cursor-pointer">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div
+                    class="explore cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-magnifying-glass mr-3"></i>
                     <span>Explore</span>
                 </div>
-                <div class="notification cursor-pointer">
-                    <i class="fa-solid fa-bell"></i>
+                <div
+                    class="notification cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-bell mr-3"></i>
                     <span>Notification</span>
                 </div>
-                <div class="grok cursor-pointer">
-                    <i class="fa-solid fa-message"></i>
+                <div
+                    class="grok cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-message mr-3"></i>
                     <span>Grok</span>
                 </div>
-                <div class="lists cursor-pointer">
-                    <i class="fa-solid fa-list"></i>
+                <div
+                    class="lists cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-list mr-3"></i>
                     <span>Lists</span>
                 </div>
-                <div class="bookmarks cursor-pointer">
-                    <i class="fa-solid fa-bookmark"></i>
+                <div
+                    class="bookmarks cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-bookmark mr-3"></i>
                     <span>Bookmarks</span>
                 </div>
-                <div class="communities cursor-pointer">
-                    <i class="fa-solid fa-user-group"></i>
+                <div
+                    class="communities cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-user-group mr-3"></i>
                     <span>Communities</span>
                 </div>
-                <div class="premium cursor-pointer">
-                    <i class="fa-solid fa-medal"></i>
+                <div
+                    class="premium cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-medal mr-3"></i>
                     <span>Premium</span>
                 </div>
-                <div class="profile cursor-pointer">
-                    <i class="fa-solid fa-user"></i>
+                <div
+                    class="profile cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-user mr-3"></i>
                     <span>Profile</span>
                 </div>
-                <div class="more cursor-pointer">
-                    <i class="fa-solid fa-ellipsis"></i>
+                <div
+                    class="more cursor-pointer hover:bg-[#0b101d] pl-5 py-3 rounded-3xl transition-all duration-350 ease-out">
+                    <i class="fa-solid fa-ellipsis mr-3"></i>
                     <span>More</span>
                 </div>
 
             </div>
         </div>
 
-        <div class="mainPanel border-l-2 border-r-2 w-2/5 border-zinc-800 m-4 relative">
+        <div class="mainPanel border-l-2 border-r-2 w-2/5 border-zinc-800 m-4 relative ">
             <div
-                class="header flex justify-around space-x-5 border-b-2 border-zinc-900  py-2 text-lg font-semibold sticky top-0  bg-black bg-opacity-95">
+                class="header h-20 flex justify-around items-center space-x-5 border-b-2 border-zinc-900  py-2 text-lg font-semibold sticky top-0  backdrop-blur-md">
                 <div
-                    class="forYou cursor-pointer border-b-4 text-zinc-400 hover:text-white border-black hover:border-b-4 hover:border-teal-400 transition duration-300 ease-out py-1">
+                    class="forYou cursor-pointer border-b-4 text-zinc-400 hover:text-white border-transparent hover:border-b-4 hover:border-teal-400 transition duration-300 ease-in-out py-1">
                     <span>For You</span>
                 </div>
                 <div class="followSettings w-1/2 flex space-x-15 justify-around text-zinc-400  ">
                     <div
-                        class="follow cursor-pointer border-b-4 border-black hover:border-b-4 hover:text-white hover:border-teal-400 transition duration-300 ease-out py-1">
+                        class="follow cursor-pointer border-b-4 border-transparent hover:border-b-4 hover:text-white hover:border-teal-400 transition duration-300 ease-in-out py-1">
                         <span>Following</span>
                     </div>
                     <div
-                        class="settings cursor-pointer border-b-4 border-black hover:border-b-4 hover:text-white hover:border-teal-400 transition duration-300 ease-out py-1">
+                        class="settings cursor-pointer border-b-4 border-transparent hover:border-b-4 hover:text-white hover:border-teal-400 transition duration-300 ease-in-out py-1">
                         <i class="fa-solid fa-gear"></i>
                     </div>
                 </div>
@@ -102,7 +112,7 @@
                         <button><i class="fa-solid fa-gift"></i></button>
                         <button><i class="fa-solid fa-fan"></i></button>
                         <button><i class="fa-solid fa-face-smile"></i></button>
-                        <button class="opacity-90"><i class="fa-solid fa-location-dot"></i></button>
+                        <button><i class="fa-solid fa-location-dot"></i></button>
                     </div>
                     <div class="postBtn bg-blue-800 py-1 px-4 rounded-2xl text-gray-300 font-semibold">
                         <button>Post</button>
@@ -135,19 +145,22 @@
                             night in UFC main event ;)
                         </div>
                         <div class="postBtn text-gray-700 flex justify-between  mt-3">
-                            <div class="comment">
-                                <button><i class="fa-regular fa-comment"></i></button>
+                            <div
+                                class="comment hover:text-blue-800 hover:bg-[#121026] rounded-3xl  cursor-pointer p-1.5">
+                                <button class="focus:bg-blue-400"><i class="fa-regular fa-comment"></i></button>
                                 <span>1k</span>
                             </div>
-                            <div class="repost">
+                            <div
+                                class="repost hover:text-green-600 hover:bg-[#191e2a] p-1.5 rounded-3xl cursor-pointer">
                                 <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
                                 <span>1k</span>
                             </div>
-                            <div class="like">
+                            <div class="like hover:text-red-500 hover:bg-[#2a2119] p-1.5 rounded-3xl cursor-pointer">
                                 <button><i class="fa-regular fa-heart"></i></button>
                                 <span>1k</span>
                             </div>
-                            <div class="share">
+                            <div
+                                class="share p-1.5 rounded-3xl hover:text-yellow-400 hover:bg-[#192a20] cursor-pointer">
                                 <button><i class="fa-solid fa-chart-simple"></i></button>
                                 <span>1k</span>
                             </div>
@@ -180,21 +193,24 @@
                             <img src="./images/react.png" alt="" class="rounded-lg">
                         </div>
                         <div class="postBtn text-gray-700 flex justify-between  mt-3">
-                            <div class="comment">
-                                <button><i class="fa-regular fa-comment"></i></button>
-                                <span>5.1k</span>
+                            <div
+                                class="comment hover:text-blue-800 hover:bg-[#121026] rounded-3xl  cursor-pointer p-1.5">
+                                <button class="focus:bg-blue-400"><i class="fa-regular fa-comment"></i></button>
+                                <span>1k</span>
                             </div>
-                            <div class="repost">
+                            <div
+                                class="repost hover:text-green-600 hover:bg-[#191e2a] p-1.5 rounded-3xl cursor-pointer">
                                 <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
-                                <span>10k</span>
+                                <span>1k</span>
                             </div>
-                            <div class="like">
+                            <div class="like hover:text-red-500 hover:bg-[#2a2119] p-1.5 rounded-3xl cursor-pointer">
                                 <button><i class="fa-regular fa-heart"></i></button>
-                                <span>18k</span>
+                                <span>1k</span>
                             </div>
-                            <div class="share">
+                            <div
+                                class="share p-1.5 rounded-3xl hover:text-yellow-400 hover:bg-[#192a20] cursor-pointer">
                                 <button><i class="fa-solid fa-chart-simple"></i></button>
-                                <span>1.9k</span>
+                                <span>1k</span>
                             </div>
                         </div>
                     </div>
@@ -224,39 +240,39 @@
                             <img src="./images/designMeme.png" alt="" class="object-cover rounded-lg">
                         </div>
                         <div class="postBtn text-gray-700 flex justify-between  mt-3">
-                            <div class="comment">
-                                <button><i class="fa-regular fa-comment"></i></button>
-                                <span>5.1k</span>
+                            <div
+                                class="comment hover:text-blue-800 hover:bg-[#121026] rounded-3xl  cursor-pointer p-1.5">
+                                <button class="focus:bg-blue-400"><i class="fa-regular fa-comment"></i></button>
+                                <span>1k</span>
                             </div>
-                            <div class="repost">
+                            <div
+                                class="repost hover:text-green-600 hover:bg-[#191e2a] p-1.5 rounded-3xl cursor-pointer">
                                 <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
-                                <span>10k</span>
+                                <span>1k</span>
                             </div>
-                            <div class="like">
+                            <div class="like hover:text-red-500 hover:bg-[#2a2119] p-1.5 rounded-3xl cursor-pointer">
                                 <button><i class="fa-regular fa-heart"></i></button>
-                                <span>18k</span>
+                                <span>1k</span>
                             </div>
-                            <div class="share">
+                            <div
+                                class="share p-1.5 rounded-3xl hover:text-yellow-400 hover:bg-[#192a20] cursor-pointer">
                                 <button><i class="fa-solid fa-chart-simple"></i></button>
-                                <span>1.9k</span>
+                                <span>1k</span>
                             </div>
                         </div>
                     </div>
 
                 </div>
-
-
-
             </div>
         </div>
 
-        <div class="rightPanel w-1/3 ">
-            <div class="search  m-4 ">
+        <div class="rightPanel sticky top-[1rem] h-fit  w-[30%]">
+            <div class="search  mx-4 my-1 ">
                 <input type="search" name="search" id="search" placeholder="Search..."
-                    class="px-3 py-1 outline-none bg-zinc-900 rounded-xl w-11/12 ">
+                    class="pl-6 py-2 outline-none bg-zinc-900 rounded-3xl w-full">
             </div>
             <div class="trends bg-zinc-900 m-4 rounded-lg">
-                <div class="trendCard p-4">
+                <div class="trendCard p-4 hover:bg-[#1d1e21] cursor-pointer">
                     <div class="trendLocation text-gray-300">
                         Trending in India
                     </div>
@@ -268,7 +284,7 @@
                     </div>
                 </div>
 
-                <div class="trendCard p-4">
+                <div class="trendCard p-4 hover:bg-[#1d1e21] cursor-pointer">
                     <div class="trendLocation text-gray-300">
                         Trending in India
                     </div>
@@ -280,19 +296,7 @@
                     </div>
                 </div>
 
-                <div class="trendCard p-4">
-                    <div class="trendLocation text-gray-300">
-                        Trending in India
-                    </div>
-                    <div class="hashtag font-semibold">
-                        #wwe
-                    </div>
-                    <div class="postNo text-gray-300">
-                        1.1m Posts
-                    </div>
-                </div>
-
-                <div class="trendCard p-4">
+                <div class="trendCard p-4 hover:bg-[#1d1e21] cursor-pointer">
                     <div class="trendLocation text-gray-300">
                         Trending in India
                     </div>
@@ -305,7 +309,7 @@
                 </div>
 
 
-                <div class="trendCard p-4">
+                <div class="trendCard p-4 hover:bg-[#1d1e21] cursor-pointer">
                     <div class="trendLocation text-gray-300">
                         Trending in India
                     </div>
@@ -317,6 +321,77 @@
                     </div>
                 </div>
 
+            </div>
+
+
+            <div class="followSuggest bg-zinc-900 m-4 rounded-lg p-4">
+                <div class="followHead">
+                    <h3>Who to follow</h3>
+                </div>
+
+                <div class="followCard mt-5 flex justify-between items-center gap-10">
+                    <div class="container flex gap-4 items-center">
+                        <div class="profile">
+                            <img class="rounded-lg" src="./images/vercel.png" alt="profilePicture" width="45px">
+                        </div>
+                        <div class="userDetails">
+                            <p>Vercel</p>
+                            <p class="text-gray-500">@vercel</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <button class="bg-white px-5 py-2 text-black font-extrabold rounded-3xl">Follow</button>
+                    </div>
+                </div>
+
+
+                <div class="followCard mt-5 flex justify-between items-center">
+                    <div class="container flex gap-4 items-center">
+                        <div class="profile">
+                            <img class="rounded-lg" src="./images/profile.jpg" alt="profilePicture" width="45px">
+                        </div>
+                        <div class="userDetails">
+                            <p>Spy x Family EN</p>
+                            <p class="text-gray-500">@spyFamilyEn</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <button class="bg-white px-5 py-2 text-black font-extrabold rounded-3xl">Follow</button>
+                    </div>
+                </div>
+
+                <div class="followCard mt-5 flex justify-between items-center">
+                    <div class="container flex gap-4 items-center">
+                        <div class="profile">
+                            <img class="rounded-lg" src="./images/react.png" alt="profilePicture" width="45px">
+                        </div>
+                        <div class="userDetails">
+                            <p>React</p>
+                            <p class="text-gray-500">@react</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <button class="bg-white px-5 py-2 text-black font-extrabold rounded-3xl">Follow</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="footer px-4 py-2 text-justify">
+                <div class="links text-gray-600 text-sm ">
+                    <span class="m-2"> <a href="#">Terms of Service </a> </span>
+                    <span>|</span>
+                    <span class="m-2"> <a href="#">Privacy Policy</a> </span>
+                    <span>|</span>
+                    <span class="m-2"> <a href="#">Cookie Policy</a> </span>
+                    <span class="m-2"> <a href="#">Accessibility</a> </span>
+                    <span>|</span>
+                    <span class="m-2"> <a href="#">Ads info</a></span>
+                    <span>|</span>
+                    <span class="m-2"> <a href="#">More</a></span>
+                    <span class="m-2"> <a href="#"> &copy; 2025 X Corp </a> </span>
+                </div>
             </div>
         </div>
     </main>
